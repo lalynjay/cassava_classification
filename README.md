@@ -55,7 +55,7 @@ networks and see if models based on those are higher performing.
 
 # For More Information
 
-See the full analysis in the [Jupyter Notebook](https://github.com/lalynjay/Time_series_analysis/blob/main/Time_series_analysis.ipynb) or review [this presentation](https://github.com/lalynjay/Time_series_analysis/blob/main/ts_presentation.pdf)
+See the full analysis in the [Jupyter Notebook](https://github.com/lalynjay/cassava_classification/blob/main/Time_series_analysis.ipynb) or review [this presentation](https://github.com/lalynjay/cassava_classification/blob/main/ts_presentation.pdf)
 
 For additional info, contact Lynn Anderson at lalynjay@gmail.com
 
