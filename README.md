@@ -1,3 +1,5 @@
+[https://github.com/lalynjay/cassava_classification/blob/main/cassava-1.jpg]
+
 # Cassava Leaf Disease Detection
 
 
