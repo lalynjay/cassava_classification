@@ -50,7 +50,7 @@ After selecting the best performing model, a Resnet model was then trained and e
 
 
 
-![](https://github.com/lalynjay/cassava_classification/blob/main/images/cassava-1.jpg)
+![](https://github.com/lalynjay/cassava_classification/blob/main/images/multiclass_cnf.png) ![](https://github.com/lalynjay/cassava_classification/blob/main/images/binary_cnf.png) ![](https://github.com/lalynjay/cassava_classification/blob/main/images/full_cnf.png)
 
 
 # Visualization 
@@ -59,7 +59,7 @@ After selecting the best performing model, a Resnet model was then trained and e
 The LIME library is used to reveal which pixels of an image were most important in the model's prediction. It should be expected that the model would be paying most attention to the leaves of the plant and not the parts of the image that are not vegetation. It appears this is mostly the case, with the model paying most attention to the leaf ends and center of the plant.
 
 
-![](https://github.com/lalynjay/cassava_classification/blob/main/images/cassava-1.jpg)
+![](https://github.com/lalynjay/cassava_classification/blob/main/images/lime_plant.png)
 
 ![](https://github.com/lalynjay/cassava_classification/blob/main/images/cassava-1.jpg)
 
