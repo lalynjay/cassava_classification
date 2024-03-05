@@ -1,4 +1,3 @@
-![](https://github.com/lalynjay/cassava_classification/blob/main/images/cassava-1.jpg)
 
 # Cassava Leaf Disease Detection
 
@@ -6,6 +5,9 @@
 ## Using Image Recognition to Identify Diseased Plants
 
 ### Lynn Anderson
+
+![](https://github.com/lalynjay/cassava_classification/blob/main/images/cassava-1.jpg)
+
 
 
 # Overview
@@ -30,7 +32,7 @@ conditions- Cassava Mosaic Disease (CMD), Cassava Bacterial Blight (CBB), Cassav
 Due to challenges with very poor performance and long run times and resource usage when training models with the full dataset, a smaller dataset consisting of 1,200 images (300 from each class) was initially used, with the most performant models then investigated on the full dataset. Images were split into training and test sets to validate model performance. 
 
 
-![](https://github.com/lalynjay/cassava_classification/blob/main/images/cassava-1.jpg)
+![](https://github.com/lalynjay/cassava_classification/blob/main/images/bar_chart_1.png)
 
 # Modeling and Evaluation
 
@@ -62,7 +64,6 @@ The LIME library is used to reveal which pixels of an image were most important 
 
 ![](https://github.com/lalynjay/cassava_classification/blob/main/images/lime_plant.png)
 
-![](https://github.com/lalynjay/cassava_classification/blob/main/images/cassava-1.jpg)
 
 
 # Conclusions
