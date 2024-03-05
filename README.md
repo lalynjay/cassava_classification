@@ -50,7 +50,8 @@ After selecting the best performing model, a Resnet model was then trained and e
 
 
 
-![](https://github.com/lalynjay/cassava_classification/blob/main/images/multiclass_cnf.png) ![](https://github.com/lalynjay/cassava_classification/blob/main/images/binary_cnf.png) ![](https://github.com/lalynjay/cassava_classification/blob/main/images/full_cnf.png)
+![](https://github.com/lalynjay/cassava_classification/blob/main/images/all_cnf.png) 
+
 
 
 # Visualization 
