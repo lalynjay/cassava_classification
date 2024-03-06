@@ -2,7 +2,8 @@
 # Cassava Leaf Disease Detection
 
 
-## Using Image Recognition to Identify Diseased Plants
+## Using Neural Networks to Identify Diseased Plants
+
 
 ### Lynn Anderson
 
@@ -10,11 +11,13 @@
 
 
 
+
+
+The objective of this project was to build a neural network classification model to identify diseased cassava plants. Cassava roots are an important source of calories and nutrition for many people, especially in sub-Saharan Africa. As the human population increases, it is increasingly important to prioritize crop health, as fertile land is finite and precious. Identifying diseased plants and appropriately treating them in a timely manner is important to ensure adequate yields. A pretrained Resnet50 model was able to correctly classify images 85% of the time. 
+
 # Overview
 
-The objective of this project was to build a neural network classification model  that can accurately identify diseased cassava plants. Cassava roots are an important source of calories and nutrition for many people, especially in sub-Saharan Africa. As the human population increases, it is increasingly important to prioritize crop health, as fertile land is finite and precious. Identifying diseased plants and appropriately treating them in a timely manner is important to ensure adequate yields. 
-
-In this project, models were trained on labelled images with the goal that, when given an image of a Cassava plant, could accurately classify it as healthy or diseased. Initially, multiclass classification models were investigated, with the aim of the model being able to identify the specific disease condition if the plant was not healthy. However, model performance was very unreliable, thus a binary classification systems was used to identify a plant as either healthy or diseased. A basic neural network was the baseline model, with models consisting of different numbers of hidden layers, and different regularization techniques examined. CNN models and Pre-trained networks were then trained and evaluated, since the basic neural network models were all unsatisfactory. Precision, recall, and F-1 score of the test data used to evaluate overall model performance.
+In this project, models were trained on labelled images and evaluated on a hold out test set. Initially, multiclass classification models were investigated, with the aim of the model being able to identify the specific disease condition if the plant was not healthy. However, model performance was very unreliable, thus a binary classification systems was used to identify a plant as either healthy or diseased. A basic neural network was the baseline model, with models consisting of different numbers of hidden layers, and different regularization techniques examined. CNN models and Pre-trained networks were then trained and evaluated, since the basic neural network models were all unsatisfactory. Precision, recall, and F-1 score of the test data used to evaluate overall model performance.
 
 
 # Business Understanding
@@ -40,7 +43,7 @@ Initially, multiclass classification models were investigated, with the aim of a
 [this notebook](https://github.com/lalynjay/cassava_classification/blob/main/Time_series_analysis.ipynb)  
 
 
-Then, a binary classification strategy was used to investigate models on classifying plants as either healthy or diseased. Rather than attempt to identify the specific disease using a neural network model, an important first step is to figure out if an image depict a plant that is healthy or diseased. Then, an expert, or perhaps more robust model, could accurately diagnose the specific disease condition. For this situation, minimizing false negatives is important, since a plant labelled as healthy when it is actually diseased would be detrimental to the customer, as their plants might go untreated would be the worst case. Thus, recall and F-1 score were used to evaluate model performance.
+For this situation, minimizing false negatives is important, since a plant labelled as healthy when it is actually diseased would be detrimental to the customer, as their plants might go untreated would be the worst case. Thus, recall and F-1 score were used to evaluate model performance.
 
 Again, baseline neural network models were investigated, followed by a CNN and Resnet model. Images of diseased plants consisted of 80% of the dataset, so it was still quite imbalanced. In many of the models, it appeared to indiscriminately classify plants as diseased. However, the pretrained model far outperformed all others. 
 
