@@ -43,9 +43,14 @@ Even after data manipulation, the diseased class still comprised 80% of the data
 
 Initially, multiclass classification models were investigated, with the aim of accurately classifying plants as either healthy or identifying the specific disease. Due to unsatisfactory model performance, a binary classification system was then used to classify plants as either healthy or diseased. A basic neural network was the baseline model, with models consisting of different numbers of hidden layers, and different regularization techniques examined. CNN models and Pre-trained networks were then trained and evaluated, since the basic neural network models were all unsatisfactory.  
 
+
 For this situation, minimizing false negatives is important, since a plant labelled as healthy when it is actually diseased would be detrimental to the customer, as their plants might go untreated would be the worst case. Thus, recall and F-1 score were taken into consideration when evaluating model performance.
 
-A pretrained Resnet50V2 model for binary classification had by far the best performance on the initial dataset. The Resnet model was then trained and evaluated on the entire dataset, with sub-par results. A multiclass model on the smaller dataset was the best model among the multiclass models; however one trained on the entire dataset performed extremely poorly.
+
+![](https://github.com/lalynjay/cassava_classification/blob/main/images/model_scores.png)
+
+
+Summary of model scores for every model investigated. A pretrained Resnet50V2 model for binary classification had by far the best performance on the initial dataset. The Resnet model was then trained and evaluated on the entire dataset, with sub-par results. A multiclass model on the smaller dataset was the best model among the multiclass models; however one trained on the entire dataset performed extremely poorly.
 
 
 
