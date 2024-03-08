@@ -87,8 +87,10 @@ The LIME library is used to reveal which pixels of an image were most important 
 
 
    * The image size for modeling was 128 x 128 pixels. Attempts at larger image sizes resulted in errors and crashes. Recreate the modeling process using a more powerful machine that can handle a much larger dataset size. 
+   
     
    * Gather more images of the underrepresented classes
+   
     
    * Further investigate other pre-trained models
 
