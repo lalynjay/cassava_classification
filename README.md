@@ -63,10 +63,34 @@ Confusion matrices for the multiclass Resnet model trained on the smaller datase
 # Visualization 
 
 
+### Correctly vs incorrectly predicted images
+
+In order to gain insight on where the model may be going right and wrong, it is helpful to take a look at some images that were both corrctly and incorrectly predicted. This next section demonstrates a sample of such images and their predicted and actual class. An inspection of some images incorrectly predicted as healthy show that those may not demonstrate quite as much yellowing as the correctly identified diseased plants. 
+
+
+When compared to the images correctly predicted as diseased, it is evident these images display less obvious yellowing and/or different lighting/background. The first image also has a different perspective, showing a few leaves but not the center of the plant. This suggests the need for consistency among images.  
+
+
+### LIME library to view focus areas
+
 The LIME library is used to reveal which pixels of an image were most important in the model's prediction. It should be expected that the model would be paying most attention to the leaves of the plant and not the parts of the image that are not vegetation. It appears this is mostly the case, with the model paying most attention to the leaf ends and center of the plant.
 
 
 ![](https://github.com/lalynjay/cassava_classification/blob/main/images/lime_plant.png)
+
+
+# Recommendations
+
+
+   * Start with the smaller Resnet model, but have an expert verify
+   
+   
+   * Instruct the farmer on how to collect images- lighting, parts of plant, etc 
+   
+
+   * Focus on center of plant and large leaves
+   
+   
 
 
 
