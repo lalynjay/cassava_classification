@@ -67,8 +67,10 @@ Confusion matrices for the multiclass Resnet model trained on the smaller datase
 
 In order to gain insight on where the model may be going right and wrong, it is helpful to take a look at some images that were both corrctly and incorrectly predicted. This next section demonstrates a sample of such images and their predicted and actual class. An inspection of some images incorrectly predicted as healthy show that those may not demonstrate quite as much yellowing as the correctly identified diseased plants. 
 
+![](https://github.com/lalynjay/cassava_classification/blob/main/images/predictions.png)
 
-When compared to the images correctly predicted as diseased, it is evident these images display less obvious yellowing and/or different lighting/background. The first image also has a different perspective, showing a few leaves but not the center of the plant. This suggests the need for consistency among images.  
+
+Examples of a correct and incorrect prediction for each class. When compared to the images correctly predicted, it is evident that in many cases the incorrect images display a different lighting/background, do not contain the center of the plant or show a diferent angle, and/or generally show less obvious yellowing. The rightmost image also has a different perspective, showing a few leaves but not the center of the plant. This suggests the need for consistency among images.  
 
 
 ### LIME library to view focus areas
