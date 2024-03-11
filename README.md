@@ -60,7 +60,7 @@ Confusion matrices for the multiclass Resnet model trained on the smaller datase
 
 
 
-# Visualization 
+## Visualization 
 
 
 ### Correctly vs incorrectly predicted images
@@ -81,6 +81,9 @@ The LIME library is used to reveal which pixels of an image were most important 
 ![](https://github.com/lalynjay/cassava_classification/blob/main/images/lime_plant.png)
 
 
+Since the center of the plant and leaves appear to be important in the model's predictions, the model's accuracy would likely be improved if there was more consistency among the images.
+
+
 # Recommendations
 
 
@@ -93,7 +96,6 @@ The LIME library is used to reveal which pixels of an image were most important 
    * Focus on center of plant and large leaves
    
    
-
 
 
 # Conclusions
@@ -144,6 +146,8 @@ Repository Structure
 └── all_models.ipynb
 
 └── activation_layers.ipynb
+
+└── requirements.txt
 
 
 # References
