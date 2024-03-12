@@ -41,10 +41,10 @@ Even after data manipulation, the diseased class still comprised 80% of the data
 # Modeling and Evaluation
 
 
-Initially, multiclass classification models were investigated, with the aim of accurately classifying plants as either healthy or identifying the specific disease. Due to unsatisfactory model performance, a binary classification system was then used to classify plants as either healthy or diseased. A basic neural network was the baseline model, with models consisting of different numbers of hidden layers, and different regularization techniques examined. CNN models and Pre-trained networks were then trained and evaluated, since the basic neural network models were all unsatisfactory.  
+Initially, multiclass classification models were investigated, with the aim of accurately classifying images into one of 5 classes- either as healthy or identifying the specific disease condition. Due to poor model performance, a binary classification system was then used to classify plants as either healthy or diseased. A basic neural network was the baseline model, with models consisting of different numbers of hidden layers, and different regularization techniques examined. CNN models and Pre-trained networks were then trained and evaluated, since the basic neural network models were all unsatisfactory.  
 
 
-For this situation, minimizing false negatives is important, since a plant labelled as healthy when it is actually diseased would be detrimental to the customer, as their plants might go untreated would be the worst case. Thus, recall and F-1 score were taken into consideration when evaluating model performance.
+For this situation, minimizing false negatives is important, since a plant labelled as healthy when it is actually diseased would be detrimental to the customer, since their diseased plants going untreated would be the worst case scenario. Thus, recall and F-1 score were taken into consideration when evaluating model performance.
 
 
 ![](https://github.com/lalynjay/cassava_classification/blob/main/images/model_scores.png)
@@ -90,10 +90,10 @@ Since the center of the plant and leaves appear to be important in the model's p
    * Start with the smaller Resnet model, but have an expert verify
    
    
-   * Instruct the farmer on how to collect images- lighting, parts of plant, etc 
+   * Focus on center of plant and large leaves
    
 
-   * Focus on center of plant and large leaves
+   * Instruct the farmer on how to properly collect images- lighting, parts of plant, etc 
    
    
 
@@ -109,19 +109,24 @@ Since the center of the plant and leaves appear to be important in the model's p
     
    * A model trained and evaluated on the full dataset had room for improvement, likely due to challanges with the extreme dataset imbalance.
    
+   
+   * There is a need for more specific standards on capturing images
+   
   
 
 # Next Steps and Limitations: 
-
-
-   * The image size for modeling was 128 x 128 pixels. Attempts at larger image sizes resulted in errors and crashes. Recreate the modeling process using a more powerful machine that can handle a much larger dataset size. 
    
     
    * Gather more images of the underrepresented classes
    
+   
+   * Set a more specific standard for images before beginning the modeling process
+   
     
    * Further investigate other pre-trained models
+   
 
+   * The image size for modeling was 128 x 128 pixels. Attempts at larger image sizes resulted in errors and crashes. Recreate the modeling process using a more powerful machine that can handle a much larger dataset size. 
 
 
 
@@ -141,13 +146,13 @@ Repository Structure
 
 ├── cassava_presentation.pdf
 
-└── final_notebook.ipynb
+|── final_notebook.ipynb
 
-└── all_models.ipynb
+|── all_models.ipynb
 
-└── activation_layers.ipynb
+|── activation_layers.ipynb
 
-└── requirements.txt
+|── requirements.txt
 
 
 # References
