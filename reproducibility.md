@@ -4,22 +4,17 @@
 2. Obtain zipped data file- it can be downloaded from https://www.kaggle.com/c/cassava-disease/overview
 3. The zipped data file will need to be unzipped. This is done by running the following code:
 
-from zipfile import ZipFile
+
+ 
+#Extracting all the members of the zip into a specific location
+#from zipfile import ZipFile
 with ZipFile("data/cassava-disease.zip", 'r') as zObject:
-  
-    # Extracting all the members of the zip 
-    # into a specific location.
-    zObject.extractall(
-        path='./data')
+    zObject.extractall(path='./data')
         
         
         
 with ZipFile("data/train.zip", 'r') as zObject:
-  
-    # Extracting all the members of the zip 
-    # into a specific location.
-    zObject.extractall(
-        path='./data')
+    zObject.extractall(path='./data')
         
         
 print(os.listdir("./data/train"))
