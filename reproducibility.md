@@ -2,7 +2,7 @@
 
 1. Ensure you have installed all the libraries in the requirements.txt file
 2. Obtain zipped data file- it can be downloaded from https://www.kaggle.com/c/cassava-disease/overview
-3. The zipped data file will need to be unzipped. This is done by running the following code:
+3. Prepare the data file. The zipped data file will need to be unzipped. This is done by running the following code:
 
         from zipfile import ZipFile
         with ZipFile("data/cassava-disease.zip", 'r') as zObject:
