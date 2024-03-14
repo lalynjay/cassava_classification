@@ -132,7 +132,7 @@ Since the center of the plant and leaves appear to be important in the model's p
 
 # For More Information
 
-See the full analysis in the [Jupyter Notebook](https://github.com/lalynjay/cassava_classification/blob/main/final_notebook.ipynb) or review [this presentation](https://github.com/lalynjay/cassava_classification/blob/main/presentation.pdf)
+See the full analysis in the [Jupyter Notebook](https://github.com/lalynjay/cassava_classification/blob/main/final_notebook.ipynb) or review [this presentation](https://github.com/lalynjay/cassava_classification/blob/main/cassava_presentation.pdf)
 
 For additional info, contact Lynn Anderson at lalynjay@gmail.com
 
