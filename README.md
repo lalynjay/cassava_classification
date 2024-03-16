@@ -31,7 +31,7 @@ The data for this project was sourced  from the Kaggle Cassava Disease dataset- 
 The data consisted of leaf images for the cassava plant belonging to one of 5 classes- healthy or four disease
 conditions- Cassava Mosaic Disease (CMD), Cassava Bacterial Blight (CBB), Cassava Greem Mite (CGM), and Cassava Brown Streak Disease (CBSD). There were a total of 5,656 labelled images in the dataset. The number of images per class were heavily unbalanced, with two disease classes- CMD and CBSD- representing 72% of the images, and healthy plants only made up 5% of the dataset.
 
-Due to challenges with very poor performance and long run times and resource usage when training models with the full dataset, a smaller dataset consisting of 1,200 images (300 from each class) was initially used, with the most performant models then investigated on the full dataset. Images were split into training and test sets to validate model performance. 
+Due to challenges with very poor performance and long run times and resource usage when training models with the full dataset, a smaller dataset consisting of 1,500 images (300 from each class) was initially used, with the most performant models then investigated on the full dataset. Images were split into training and test sets to validate model performance. 
 
 
 ![](https://github.com/lalynjay/cassava_classification/blob/main/images/bar_chart_1.png)
