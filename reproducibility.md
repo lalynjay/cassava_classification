@@ -5,12 +5,12 @@
 3. Prepare the data file. The zipped data file will need to be unzipped. This is done by running the following code:
 
         from zipfile import ZipFile
-        with ZipFile("data/cassava-disease.zip", 'r') as zObject:
+        with ZipFile("cassava-disease.zip", 'r') as zObject:
             zObject.extractall(path='./data')
         
 To unzip the data/train file:       
         
-    with ZipFile("data/train.zip", 'r') as zObject:
+    with ZipFile("train.zip", 'r') as zObject:
         zObject.extractall(path='./data')
        
        
@@ -25,8 +25,48 @@ should output:
         (5,)
 
 
-From here, go into the "data" folder and create a new folder named "short". In the "short" folder, create 5 new subfolders- 
-'cbb', 'cbsd', 'cgm', 'cmd', 'healthy'. From here, select the first 300 images in each subfolder from the "data/train" folder, and copy and paste into the respective "data/short" subfolder. 
+From here, make directories for each subfolder:
+
+    ! mkdir "data/short1/cbb"
+    ! mkdir "data/short1/cbsd"
+    ! mkdir "data/short1/cgm"
+    ! mkdir "data/short1/cmd"
+    ! mkdir "data/short1/healthy"
+
+
+
+    for filename in os.listdir("data/train/cbb"):
+    str = filename
+    num = getNumbers(str)
+    if num < 300:
+        os.rename("data/train/cbb/" + filename, "data/short1/cbb/" + filename)
+        
+        
+    for filename in os.listdir("data/train/cbb"):
+    str = filename
+    num = getNumbers(str)
+    if num < 300:
+        os.rename("data/train/cbb/" + filename, "data/short1/cbb/" + filename)
+        
+    for filename in os.listdir("data/train/cbb"):
+    str = filename
+    num = getNumbers(str)
+    if num < 300:
+        os.rename("data/train/cbb/" + filename, "data/short1/cbb/" + filename)
+        
+    for filename in os.listdir("data/train/cbb"):
+    str = filename
+    num = getNumbers(str)
+    if num < 300:
+        os.rename("data/train/cbb/" + filename, "data/short1/cbb/" + filename)
+        
+        
+    for filename in os.listdir("data/train/cbb"):
+    str = filename
+    num = getNumbers(str)
+    if num < 300:
+        os.rename("data/train/cbb/" + filename, "data/short1/cbb/" + filename)
+    
 
 Running the following lines:
 
