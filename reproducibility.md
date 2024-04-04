@@ -33,39 +33,52 @@ From here, make directories for each subfolder:
     ! mkdir "data/short1/cmd"
     ! mkdir "data/short1/healthy"
 
+To add the first 300 images from each category in the train folder into the respective subfolder, the following code will need to be run:
 
+    # Function to extract all the numbers from the given string
+    def getNumbers(str):
+    array = re.findall(r'[0-9]+', str)
+    num = int(array[0])
+    return num
+ 
+    # to add images to the proper directories
 
+    # cbb images
     for filename in os.listdir("data/train/cbb"):
     str = filename
     num = getNumbers(str)
     if num < 300:
-        os.rename("data/train/cbb/" + filename, "data/short1/cbb/" + filename)
+        shutil.copy("data/train/cbb/" + filename, "data/short/cbb/" + filename)
         
         
-    for filename in os.listdir("data/train/cbb"):
+    # cbsd images
+    for filename in os.listdir("data/train/cbsd"):
     str = filename
     num = getNumbers(str)
     if num < 300:
-        os.rename("data/train/cbb/" + filename, "data/short1/cbb/" + filename)
+        shutil.copy("data/train/cbsd/" + filename, "data/short/cbsd/" + filename)
         
-    for filename in os.listdir("data/train/cbb"):
+    # cgm images
+    for filename in os.listdir("data/train/cgm"):
     str = filename
     num = getNumbers(str)
     if num < 300:
-        os.rename("data/train/cbb/" + filename, "data/short1/cbb/" + filename)
+        shutil.copy("data/train/cgm/" + filename, "data/short/cgm/" + filename)
         
-    for filename in os.listdir("data/train/cbb"):
+    # cmd images
+    for filename in os.listdir("data/train/cmd"):
     str = filename
     num = getNumbers(str)
     if num < 300:
-        os.rename("data/train/cbb/" + filename, "data/short1/cbb/" + filename)
+        shutil.copy("data/train/cmd/" + filename, "data/short/cmd/" + filename)
         
         
-    for filename in os.listdir("data/train/cbb"):
+    # healthy images
+    for filename in os.listdir("data/train/healthy"):
     str = filename
     num = getNumbers(str)
     if num < 300:
-        os.rename("data/train/cbb/" + filename, "data/short1/cbb/" + filename)
+        shutil.copy("data/train/healthy/" + filename, "data/short/healthy/" + filename)
     
 
 Running the following lines:
@@ -90,4 +103,4 @@ Should output:
     (300,)
 
 
-From here, you should have the data in a format to proceed with running the cells in the notebooks.
+This code is also present in the final notebook for, but is demonstrated here for ease of reproducibility. From here, you should have the data in a format to proceed with running the cells in the notebooks.
