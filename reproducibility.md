@@ -10,7 +10,7 @@
         
 To unzip the data/train file:       
         
-    with ZipFile("train.zip", 'r') as zObject:
+    with ZipFile("data/train.zip", 'r') as zObject:
         zObject.extractall(path='./data')
        
        
@@ -25,7 +25,12 @@ should output:
         (5,)
 
 
-From here, make directories for each subfolder:
+From here, make the directory for the new image folders:
+
+    ! mkdir "data/short"
+    
+    
+And then the directories for each subfolder:
 
     ! mkdir "data/short1/cbb"
     ! mkdir "data/short1/cbsd"
